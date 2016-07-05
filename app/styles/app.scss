@@ -1,0 +1,28 @@
+
+$picnic-radius: 0;
+
+@import '../../bower_components/reset-scss/reset-src';
+@import '../../bower_components/reset-scss/reset-src';
+@import '../../bower_components/picnic/src/picnic';
+@import '../../bower_components/picnic/src/plugins/nav/plugin';
+@import '../../bower_components/picnic/src/plugins/modal/plugin';
+
+#index-wrapper {
+
+  margin-top: $picnic-nav-height;
+}
+
+#search-box {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+#search-input {
+  width: 90%;
+}
+
+#search-button {
+  margin: 0;
+  width: 10%;
+}
