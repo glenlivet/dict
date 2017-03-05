@@ -1,0 +1,19 @@
+.star-rating {
+
+  display: inline;
+  list-style-type: none;
+  .star:before {
+    color: #FFD700;
+    font-size: 0.8em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+
+  .star {
+    color: #DDD;
+    display: inline;
+  }
+
+}
+

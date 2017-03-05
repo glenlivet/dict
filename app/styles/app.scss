@@ -2,27 +2,79 @@
 $picnic-radius: 0;
 
 @import '../../bower_components/reset-scss/reset-src';
-@import '../../bower_components/reset-scss/reset-src';
+
+@import '../../bower_components/font-awesome/scss/font-awesome';
+
 @import '../../bower_components/picnic/src/picnic';
 @import '../../bower_components/picnic/src/plugins/nav/plugin';
 @import '../../bower_components/picnic/src/plugins/modal/plugin';
 
-#index-wrapper {
+
+
+#index-wrapper, .under-menubar {
 
   margin-top: $picnic-nav-height;
 }
 
-#search-box {
-  display: flex;
-  width: 70%;
+.horizontal-centred {
+  width: 800px;
   margin: auto;
+}
+
+#search-box, .search-box {
+  display: flex;
 }
 
 #search-input {
   width: 90%;
 }
 
-#search-button {
+#search-button, .search-button {
   margin: 0;
   width: 10%;
 }
+
+@media screen 
+  and (max-width: 1200px)  
+  and (orientation: landscape) {
+
+    .horizontal-centred {
+      width: 80%;
+      margin: auto;
+    }
+
+    #search-input {
+      width: 80%;
+    }
+
+    #search-button, .search-button {
+      margin: 0;
+      width: 20%;
+    }
+}
+
+@media screen 
+  and (max-width: 1200px)  
+  and (orientation: portrait) {
+    .horizontal-centred {
+      width: 98%;
+      margin: auto;
+    }
+
+    #search-input {
+      width: 80%;
+    }
+
+    #search-button, .search-button {
+      margin: 0;
+      width: 20%;
+    }
+}
+
+.g-italic {
+  font-style: italic;
+}
+
+@import 'word_section/plugin';
+@import 'star_rating/plugin';
+

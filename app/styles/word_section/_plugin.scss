@@ -1,0 +1,48 @@
+
+$word-section-bgcolor: #F9F8E4;
+$word-section-fgbrown: rgb(155, 141, 114);
+
+.word-section {
+  background: $word-section-bgcolor;
+  padding: 3px 20px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ecebc7;
+  box-shadow: 0 1px 10px rgba(0,0,0,.04);
+
+  .keyword {
+    font-size: 1.6em;
+    padding: 0;
+    padding-right: 0.5em;
+  }
+
+  .word-section-top {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .pron-prefix {
+    font-style: italic;
+    color: $word-section-fgbrown;
+  }
+
+  .span-pronunciation {
+    color: $word-section-fgbrown;
+    margin-right: 0.5em;
+  }
+
+  .beside-keyword {
+  }
+
+  .definition-list {
+    list-style-type: upper-roman;
+
+    li {
+      margin-left: 1em;
+
+      ul {
+        list-style-type:circle;
+      }
+    }
+  }
+}
+
